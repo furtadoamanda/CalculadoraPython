@@ -1,3 +1,5 @@
+from funcoes import *
+
 print(f"{'*' * 10} CALCULADORA PYTHON {'*' * 10}")
 running = True
 selecao_valida = [1, 2, 3, 4, 5]
@@ -17,35 +19,6 @@ try:
         if selecao != 0 and selecao in selecao_valida:
             primeiro_numero = int(input("Primeiro numero: "))
             segundo_numero = int(input("Segundo numero: "))
-
-        def adicao(primeiro_numero, segundo_numero):
-            resultado = primeiro_numero + segundo_numero
-            print(f"\t{primeiro_numero} + {segundo_numero} = {resultado}")
-            print("***** Nova operação: ")
-
-
-        def subtracao(primeiro_numero, segundo_numero):
-            resultado = primeiro_numero - segundo_numero
-            print(f"\t{primeiro_numero} - {segundo_numero} = {resultado}")
-            print("***** Nova operação: ")
-
-
-        def divisao(primeiro_numero, segundo_numero):
-            resultado = primeiro_numero / segundo_numero
-            print(f"\t{primeiro_numero} / {segundo_numero} = {resultado}")
-            print("***** Nova operação: ")
-
-
-        def multiplicacao(primeiro_numero, segundo_numero):
-            resultado = primeiro_numero * segundo_numero
-            print(f"\t{primeiro_numero} x {segundo_numero} = {resultado}")
-            print("***** Nova operação: ")
-
-
-        def potencializacao(primeiro_numero, segundo_numero):
-            resultado = primeiro_numero ** segundo_numero
-            print(f"\t{primeiro_numero} ** {segundo_numero} = {resultado}")
-            print("***** Nova operação: ")
 
 
         if selecao == 1:

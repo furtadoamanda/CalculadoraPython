@@ -3,9 +3,11 @@
 Criei este projeto para praticar os conteúdos aprendidos em Python.  
  É uma calculadora simples que realiza as operações de *adição*, *subtração*, *divisão*, *multiplicação* e *potencialização*.  
 
-O código se inicia com uma mensagem de boas-vindas e duas linhas de código que contribuem para o bom funcionamento do programa:
+O código se inicia importando as funções que se encontram em um arquivo apartado, seguido por uma mensagem de boas-vindas e duas linhas de código que contribuem para o bom funcionamento do programa:
 
 ```python
+from funcoes import *
+
 print(f"{'*' * 10} CALCULADORA PYTHON {'*' * 10}")
 running = True
 selecao_valida = [1, 2, 3, 4, 5]
@@ -13,7 +15,7 @@ selecao_valida = [1, 2, 3, 4, 5]
 O trecho "running" indica que o código está em funcionamento e o laço de repetição será executado. Já a "selecao_valida" corresponde às possíveis seleções de operação.
 
 O código é englobado em um bloco "try" para evitar que todo o programa quebre se ocorrer um *ValueError*, previsto para quando for inserido um caractere não numérico, tanto para a seleção da operação a ser realizada quanto para os números da operação.
-➡️ Caso ocorra o erro definido, será exibida a mensagem "Valor não aceito"
+➡️ Caso ocorra o erro definido, será exibida a mensagem "Valor não aceito" e o programa será encerrado.
 
 
 ### Parte inicial do código:
@@ -41,8 +43,10 @@ def adicao(primeiro_numero, segundo_numero):
     resultado = primeiro_numero + segundo_numero
     print(f"\t{primeiro_numero} + {segundo_numero} = {resultado}")
     print("***** Nova operação: ")
+
+(...)
 ```
-Logo após a introdução, são definidas as funções das 5 operações que podem ser executadas. Todas as funções possuem as mesmas funcionalidades, sendo definida a variável "resultado" e exibida a operação realizada. A seguir, é exibida uma nova frase de condução, uma vez que o código é realizado em um laço while.
+As funções das 5 operações que podem ser executadas são definidas no arquivo funcoes.py, sendo importadas no início do programa calculadora.py. Todas as funções possuem as mesmas funcionalidades, sendo definida a variável "resultado" e exibida a operação realizada. A seguir, é exibida uma nova frase de condução, uma vez que o código é realizado em um laço while.
 
 ### Bloco IF:
 ```python
